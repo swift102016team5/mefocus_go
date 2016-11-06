@@ -1,2 +1,2 @@
-# mefocus_go
-Backend
+# mefocus
+Backend for mefocus . Backed by golang + mongodb
