@@ -1,5 +1,5 @@
 {
-	"ImportPath": "web",
+	"ImportPath": "github.com/swift102016team5/mefocusgo/web",
 	"GoVersion": "go1.6",
 	"Deps": [{
 		"ImportPath": "github.com/gorilla/mux",
