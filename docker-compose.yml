@@ -4,7 +4,7 @@ services:
     build: .
     working_dir: /go/src/web
     volumes:
-      - ./web:/go/src/web
+      - .:/go/src/web
     links:
       - db
     command: go run main.go
