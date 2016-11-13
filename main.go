@@ -20,6 +20,6 @@ func main() {
 
 	http.Handle("/", r)
 
-	log.Println("Listening at 8080")
+	log.Println("Listening at :" + os.Getenv("PORT"))
 	log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), nil))
 }
