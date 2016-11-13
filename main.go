@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"github.com/gorilla/mux"
+	"os"
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -20,5 +21,5 @@ func main() {
 	http.Handle("/", r)
 
 	log.Println("Listening at 8080")
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), nil))
 }
