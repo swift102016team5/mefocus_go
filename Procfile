@@ -1,1 +1,1 @@
-web: mefocusgo
+web: web
