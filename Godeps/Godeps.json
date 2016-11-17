@@ -7,7 +7,7 @@
 	}, {
 		"ImportPath": "github.com/gorilla/mux"
 	}, {
-		"ImportPath": "gopkg.in/mgo.v2/bson"
+		"ImportPath": "gopkg.in/mgo.v2"
 	}, {
 		"ImportPath": "api/controllers"
 	}]
