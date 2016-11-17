@@ -2,15 +2,8 @@
 	"ImportPath": "web",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v75",
-	"Deps": [{
-		"ImportPath": "github.com/gorilla/context"
-	}, {
-		"ImportPath": "github.com/gorilla/mux"
-	}, {
-		"ImportPath": "gopkg.in/mgo.v2"
-	}, {
-		"ImportPath": "gopkg.in/mgo.v2/bson"
-	}, {
-		"ImportPath": "api/controllers"
-	}]
+	"Packages": [
+		"./.."
+	],
+	"Deps": []
 }
