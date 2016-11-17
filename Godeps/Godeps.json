@@ -9,6 +9,8 @@
 	}, {
 		"ImportPath": "gopkg.in/mgo.v2"
 	}, {
+		"ImportPath": "gopkg.in/mgo.v2/bson"
+	}, {
 		"ImportPath": "api/controllers"
 	}]
 }
