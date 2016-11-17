@@ -10,10 +10,11 @@ import (
 )
 
 func main() {
-	r := mux.NewRouter().StrictSlash(true)
-	r.HandleFunc("/", controllers.Suggestions).Methods("GET")
+	router := mux.NewRouter().StrictSlash(true)
 
-	http.Handle("/", r)
+	router.HandleFunc("/api/suggestions", controllers.Suggestions).Methods("GET")
+
+	http.Handle("/", router)
 
 	log.Println("Listening at :" + os.Getenv("PORT"))
 	log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), nil))
