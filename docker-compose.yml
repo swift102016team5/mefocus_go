@@ -5,12 +5,8 @@ services:
     working_dir: /go/src/web
     volumes:
       - .:/go/src/web
-    links:
-      - db
+    environment:
+      - PORT=8080
     command: go run main.go
     ports:
       - "8080:8080"
-  db:
-    image: mvertes/alpine-mongo
-    ports:
-      - "27017:27017"

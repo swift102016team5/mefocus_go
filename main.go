@@ -6,17 +6,13 @@ import (
 	"net/http"
 	"github.com/gorilla/mux"
 	"os"
-)
 
-func index(w http.ResponseWriter, r *http.Request) {
-	log.Println("Index request", r.RemoteAddr, r.URL)
-	t, _ := template.ParseFiles("views/index.html")
-	t.Execute(w, nil)
-}
+	"api/controllers"
+)
 
 func main() {
 	r := mux.NewRouter().StrictSlash(true)
-	r.HandleFunc("/", index).Methods("GET")
+	r.HandleFunc("/", controllers.Suggestions).Methods("GET")
 
 	http.Handle("/", r)
 
