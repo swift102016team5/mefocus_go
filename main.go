@@ -15,6 +15,7 @@ func main() {
 	hub := watcher.Run()
 
 	router.HandleFunc("/api/suggestions", controllers.Suggestions).Methods("GET")
+	router.HandleFunc("/api/users", controllers.Users).Methods("GET")
 	router.HandleFunc("/ws",func(w http.ResponseWriter, r *http.Request) {
 		watcher.Handle(hub, w, r)
 	}).Methods("GET")
